@@ -108,4 +108,19 @@ view: niagara_dummy_data {
       WHEN ${TABLE}.factor = 'Distribution' THEN CAST( {% parameter niagara_dummy_data.distribution_parameter %} AS NUMERIC)
     END ;;
   }
+  parameter: scenario_name_parameter {
+    type: string
+    label: "Scenario Name Parameter"
+    default_value: "Scenario 1"
+
+    allowed_value: {
+      label: "Scenario 1"
+      value: "Scenario 1"
+    }
+  }
+  dimension: scenario_name_value {
+    label: "Scenario Name Value"
+    type: number
+    sql:CAST( {% parameter niagara_dummy_data.scenario_name_parameter %} AS NUMERIC);;
+  }
 }
