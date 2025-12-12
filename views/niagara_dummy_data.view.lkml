@@ -89,4 +89,23 @@ view: niagara_dummy_data {
     label: "Comment"
     type: unquoted
   }
+  parameter: pricing_parameter {
+    type: number
+    label: "Pricing Parameter"
+    default_value: "2"
+  }
+  parameter: distribution_parameter {
+    type: number
+    label: "Distribution Parameter"
+    default_value: "3"
+  }
+  dimension: factor_value {
+    label: "Factor Value"
+    type: number
+    sql:
+    CASE
+      WHEN ${TABLE}.factor = 'Pricing' THEN CAST( {% parameter niagara_dummy_data.pricing_parameter %} AS NUMERIC)
+      WHEN ${TABLE}.factor = 'Distribution' THEN CAST( {% parameter niagara_dummy_data.distribution_parameter %} AS NUMERIC)
+    END ;;
+  }
 }
