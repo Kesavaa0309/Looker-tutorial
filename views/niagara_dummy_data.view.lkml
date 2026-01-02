@@ -36,13 +36,7 @@ view: niagara_dummy_data {
         name:"id"
         value: "{{value}}"
       }
-      form_param: {
-        name: "create scenario"
-        type: string
-        label: "Create Scenario"
-        description: "Enter new scenario above."
-        required: yes
-      }
+
     }
     action: {
       label: "Add comment"
