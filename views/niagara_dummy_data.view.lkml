@@ -2,6 +2,7 @@ view: niagara_dummy_data {
   sql_table_name: `test_db.niagara_dummy_data` ;;
 
   dimension: brand {
+    primary_key: yes
     type: string
     sql: ${TABLE}.brand ;;
   }
