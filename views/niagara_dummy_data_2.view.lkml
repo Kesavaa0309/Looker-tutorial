@@ -1,8 +1,8 @@
-view: niagara_dummy_data {
+view: niagara_dummy_data_2 {
   sql_table_name: `test_db.niagara_dummy_data` ;;
 
   dimension: brand {
-    primary : yes
+    primary_key : yes
     type: string
     sql: ${TABLE}.brand ;;
   }
