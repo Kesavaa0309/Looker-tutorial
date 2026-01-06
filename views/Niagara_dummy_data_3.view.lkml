@@ -1,4 +1,4 @@
-view: niagara_dummy_data {
+view: niagara_dummy_data_3 {
   sql_table_name: `test_db.niagara_dummy_data` ;;
 
   dimension: brand {
