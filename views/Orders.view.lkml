@@ -1,109 +1,108 @@
 view: Orders{
   sql_table_name: `Samplestore.Orders` ;;
-  dimension: Row ID {
+  dimension: row_id {
     type: number
     sql: ${TABLE}.Row ID ;;
   }
 
-  dimension: Order ID {
+  dimension: order_id {
     type: string
     sql: ${TABLE}.Order ID ;;
   }
 
-  dimension: Order Date {
-    type: date_date
+  dimension: order_date {
+    type: date
     sql: ${TABLE}.Order Date ;;
   }
 
-  dimension: Ship Date {
-    type: date_date
+  dimension: ship_date {
+    type: date
     sql: ${TABLE}.Ship Date ;;
   }
 
-  dimension: Ship Mode {
+  dimension: ship_mode {
     type: string
     sql: ${TABLE}.Ship Mode ;;
   }
 
-  dimension: Customer ID {
+  dimension: customer_id {
     type: string
     sql: ${TABLE}.Customer ID ;;
   }
 
-  dimension: Customer Name {
+  dimension: customer_name {
     type: string
     sql: ${TABLE}.Customer Name ;;
   }
 
-  dimension: Segment {
+  dimension: segment {
     type: string
     sql: ${TABLE}.Segment ;;
   }
 
-  dimension: Country {
+  dimension: country {
     type: string
     sql: ${TABLE}.Country ;;
   }
 
-  dimension: City {
+  dimension: city {
     type: string
     sql: ${TABLE}.City ;;
   }
 
-  dimension: State {
+  dimension: state {
     type: string
     sql: ${TABLE}.State ;;
   }
 
-  dimension: Postal Code {
+  dimension: postal_code {
     type: number
     sql: ${TABLE}.Postal Code ;;
   }
 
-  dimension: Region {
+  dimension: region {
     type: string
     sql: ${TABLE}.Region ;;
   }
 
-  dimension: Product ID {
+  dimension: product_id {
     type: string
     sql: ${TABLE}.Product ID ;;
   }
 
-  dimension: Category {
+  dimension: category {
     type: string
     sql: ${TABLE}.Category ;;
   }
 
-  dimension: Sub-Category {
+  dimension: sub-category {
     type: string
     sql: ${TABLE}.Sub-Category ;;
   }
 
-  dimension: Product Name {
+  dimension: product_name {
     type: string
     sql: ${TABLE}.Product Name ;;
   }
 
-  dimension: Sales {
+  dimension: sales {
     type: number
     sql: ${TABLE}.Sales ;;
   }
 
-  dimension: Quantity {
+  dimension: quantity {
     type: number
     sql: ${TABLE}.Quantity ;;
   }
 
-  dimension: Discount {
+  dimension: discount {
     type: number
     sql: ${TABLE}.Discount ;;
   }
 
-  dimension: Profit {
+  dimension: profit {
     type: number
     sql: ${TABLE}.Profit ;;
   }
 
 }
-
