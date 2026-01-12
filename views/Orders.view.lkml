@@ -75,7 +75,7 @@ view: Orders{
     sql: ${TABLE}.Category ;;
   }
 
-  dimension: sub-category {
+  dimension: sub_category {
     type: string
     sql: ${TABLE}.Sub-Category ;;
   }

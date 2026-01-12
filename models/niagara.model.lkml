@@ -13,3 +13,7 @@ persist_with: niagara_default_datagroup
 explore: niagara_dummy_data {}
 
 explore: v_user_data {}
+
+explore: Orders {}
+
+explore: ecommerce {}
